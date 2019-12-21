@@ -1,0 +1,240 @@
+/* polices personnalisées */
+
+@font-face {
+    font-family: 'orkneyregular';
+    src: url('./polices/orkney-regular-webfont.eot');
+    src: url('./polices/orkney-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./polices/orkney-regular-webfont.woff2') format('woff2'),
+         url('./polices/orkney-regular-webfont.woff') format('woff'),
+         url('./polices/orkney-regular-webfont.ttf') format('truetype'),
+         url('./polices/orkney-regular-webfont.svg#orkneyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'orkneybold';
+    src: url('./polices/orkney-bold-webfont.eot');
+    src: url('./polices/orkney-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./polices/orkney-bold-webfont.woff2') format('woff2'),
+         url('./polices/orkney-bold-webfont.woff') format('woff'),
+         url('./polices/orkney-bold-webfont.ttf') format('truetype'),
+         url('./polices/orkney-bold-webfont.svg#orkneybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'orkneymedium';
+    src: url('./polices/orkney-medium-webfont.eot');
+    src: url('./polices/orkney-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./polices/orkney-medium-webfont.woff2') format('woff2'),
+         url('./polices/orkney-medium-webfont.woff') format('woff'),
+         url('./polices/orkney-medium-webfont.ttf') format('truetype'),
+         url('./polices/orkney-medium-webfont.svg#orkneymedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+/*en-tête*/
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#photo img
+{
+    border-radius: 50%;
+    border: 8px #c4e2ca solid;
+    align-self: center; 
+    margin-top: 26px;
+}
+
+header h1
+{
+    font-family: 'orkneybold', Arial, Verdana, Comic Sans MS; 
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -2px;
+    color: #494e5f;
+
+}
+
+header p
+{
+    font-family: 'orkneymedium', Arial, Verdana, Comic Sans MS;
+    font-style: italic;
+    font-size: 0.87em;
+    text-align: center;
+    margin-top: -18px;
+    color: #587d9f;
+}
+
+/* Fin en-tête */
+
+
+
+/* corps de la page */
+
+body
+{
+    font-family:'orkneyregular', Arial, Verdana, Comic Sans MS;
+    color: #373F44;
+    font-size: 0.97em;
+}
+
+section
+{
+    display: flex;
+}
+
+
+/* Partie gauche du CV */
+#liseret
+{
+    width: 30%;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 50px;
+    margin-left: 10px;
+
+
+}
+
+aside
+{
+    background-color: #c4e2ca;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    
+
+}
+
+aside h2
+{
+    margin-left: 25px;
+    color: #494e5f;
+}
+
+aside ul
+{
+    padding-bottom: 20px;
+    margin-top: -15px;
+    list-style-type: circle;
+}
+
+
+
+/* Partie droite du CV */
+
+#bloc_exp_formation
+{
+    width: 57%;
+    text-align: justify;
+}
+
+#bloc_exp_formation h2
+{
+   background-color: #c4e2ca;
+   color: #494e5f;
+   text-align: center; 
+}
+
+#bloc_exp_formation ul
+{
+    margin-top: -10px;
+    padding-bottom: 25px;
+}
+
+p
+{
+    color: #587d9f;
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: -15px;
+}
+
+#formation
+{
+    padding-bottom: 15px;
+}
+
+/* Fin corps de la page */
+
+
+
+
+/* Pied de page */
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #494e5f;
+}
+
+#photos_reseaux_sociaux
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#image1, #image2, #image3
+{
+    margin-top: -5px;
+    margin-bottom: -1px;
+    margin-right: 10px;
+}
+
+/* Fin pied de page */
+
+#contenu
+{
+    width: 100%;
+    margin: auto;
+}
+
+
+/* mode responsive */
+@media all and (max-width: 1024px)
+{
+     section    
+    {
+        width: auto;
+        flex-direction: column;   
+    }
+
+    #bloc_exp_formation
+    {
+        width: auto; 
+        margin-left: 4px;  
+    }
+
+    #liseret
+    {
+        width: auto;
+        margin-right: -3px;
+        margin-left: -1px;
+    }
+
+    #contenu
+    {
+        width: auto;
+    }
+}
